@@ -14,7 +14,7 @@ public class HealthProfessional {
         this.name=name;
         this.department=department;
     }
-    public void printDetails(){
+    public void PrintDetails(){
         System.out.println("ID:"+id);
         System.out.println("Name"+name);
         System.out.println("Department"+department);

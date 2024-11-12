@@ -11,8 +11,8 @@ public class GeneralPractitioner extends HealthProfessional {
         this.ConsulationType=ConsulationType;
     }
 
-    public void printDetails(){
-        super.printDetails();
+    public void PrintDetails(){
+        super.PrintDetails();
         System.out.println("Consultation Type"+ConsulationType);
     }
 }
