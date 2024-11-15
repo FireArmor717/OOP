@@ -1,18 +1,18 @@
 public class GeneralPractitioner extends HealthProfessional {
-    private String ConsulationType;
+    private String ConsultationType;
     
     public GeneralPractitioner(){
         super();
-        this.ConsulationType="General Consultation";
+        this.ConsultationType="General Consultation";
     }
 
-    public GeneralPractitioner(int id,String name,String department,String ConsulationType){
+    public GeneralPractitioner(int id,String name,String department,String ConsultationType){
         super(id,name,department);
-        this.ConsulationType=ConsulationType;
+        this.ConsultationType=ConsultationType;
     }
 
     public void PrintDetails(){
         super.PrintDetails();
-        System.out.println("Consultation Type"+ConsulationType);
+        System.out.println("Consultation Type"+ConsultationType);
     }
 }
