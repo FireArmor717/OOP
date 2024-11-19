@@ -12,6 +12,30 @@ public class AssignmentOne {
         appts.add(new Appointment("13322221111","Lava","10:10",c1));
 
         System.out.println("Current Appointments: ");
-        for()
+        for(Appointment a:appts){
+            a.PrintDetails();
+            System.out.println("--------------------");
+        }
+
+        String Cancel="82070606";
+        boolean removing=false;
+
+        for(int i = 0; i < appts.size(); i++) {
+            if(appts.get(i).PatientMobileNum.equals(Cancel)){
+                appts.remove(i);
+                removing=true;
+                System.out.println("Appointment for: "+Cancel+"has been canceled.");
+                break;
+            }
+        }
+        if(!removing){
+            System.out.println("There is no appointment for: "+Cancel);
+        }
+
+        System.out.println("Updated Appointments:");
+        for(Appointment a:appts){
+            a.PrintDetails();
+            System.out.println("--------------------");
+        }
     }
 }

@@ -1,7 +1,7 @@
 public class Appointment {
     public static Object phone;
     private String PatientName;
-    private String PatientMobileNum;
+    String PatientMobileNum;
     private HealthProfessional healthProfessional;
     private String TimeSlot;
 
