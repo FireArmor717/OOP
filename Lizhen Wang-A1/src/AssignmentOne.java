@@ -28,6 +28,7 @@ public class AssignmentOne {
                 break;
             }
         }
+        
         if(!removing){
             System.out.println("There is no appointment for: "+Cancel);
         }
