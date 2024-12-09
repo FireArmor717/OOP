@@ -130,4 +130,9 @@ public class Ride implements RideInterface{
             System.out.println("Error importing ride history: " + e.getMessage());
         }
     }
+    
+    public void sortRideHistory(Comparator<Visitor> comparator) {
+        Collections.sort(rideHistory, comparator);
+        System.out.println("Ride history sorted.");
+    }
 }
