@@ -121,4 +121,19 @@ public class AssignmentTwo {
         rollerCoaster.printRideHistory();
     }
 
+    // Part 6: Write to file
+    public void partSix() {
+        System.out.println("Part 6: Writing to file output");
+
+        Employee operator = new Employee("Junyi", 30, "Male", "Operator", 1);
+        Ride rollerCoaster = new Ride("Roller Coaster", operator);
+
+        Visitor visitor1 = new Visitor("Xiao", 25, "Female", 101, true);
+        Visitor visitor2 = new Visitor("Zhen", 20, "Male", 102, false);
+        rollerCoaster.addVisitorToHistory(visitor1);
+        rollerCoaster.addVisitorToHistory(visitor2);
+
+        rollerCoaster.exportRideHistory("ride_history.csv");
+    }
+    
 }
