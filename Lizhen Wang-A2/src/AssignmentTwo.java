@@ -32,6 +32,7 @@ public class AssignmentTwo {
         rollerCoaster.removeVisitorFromQueue();
         rollerCoaster.printQueue();
     }
+
     // Part 4A: Use LinkedList to store Ride history
     public void partFourA() {
         System.out.println("Part 4A: Use LinkedList to store Ride history output");
@@ -85,6 +86,7 @@ public class AssignmentTwo {
         System.out.println("After Sorting:");
         rollerCoaster.printRideHistory();
     }
+    
 
     // Part 5: Run a cycle for Ride
     public void partFive() {
@@ -135,5 +137,15 @@ public class AssignmentTwo {
 
         rollerCoaster.exportRideHistory("ride_history.csv");
     }
-    
+
+    // Part 7: Read from file
+    public void partSeven() {
+        System.out.println("Part 7: Reading from file output");
+
+        Employee operator = new Employee("Junyi", 30, "Male", "Operator", 1);
+        Ride rollerCoaster = new Ride("Roller Coaster", operator);
+
+        rollerCoaster.importRideHistory("ride_history.csv");
+        rollerCoaster.printRideHistory();
+    }
 }
